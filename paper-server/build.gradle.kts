@@ -1,6 +1,7 @@
 import io.papermc.fill.model.BuildChannel
 import io.papermc.paperweight.attribute.DevBundleOutput
-import io.papermc.paperweight.util.*
+import io.papermc.paperweight.util.Git
+import io.papermc.paperweight.util.path
 import java.time.Instant
 
 plugins {
@@ -183,6 +184,9 @@ dependencies {
     // Spark
     implementation("me.lucko:spark-api:0.1-20240720.200737-2")
     implementation("me.lucko:spark-paper:1.10.152")
+
+    // Folra
+    implementation("com.github.GrassProject:Folra:1.2.2-BETA")
 }
 
 tasks.jar {

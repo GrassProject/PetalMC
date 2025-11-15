@@ -1313,7 +1313,7 @@ public class CraftWorld extends CraftRegionAccessor implements World {
     }
 
     @Override
-    public FallingBlock spawnFallingBlock(Location location, BlockData data) throws IllegalArgumentException {
+    public @NotNull FallingBlock spawnFallingBlock(Location location, BlockData data) throws IllegalArgumentException {
         Preconditions.checkArgument(location != null, "Location cannot be null");
         Preconditions.checkArgument(data != null, "BlockData cannot be null");
 

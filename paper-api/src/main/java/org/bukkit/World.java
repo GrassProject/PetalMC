@@ -2585,7 +2585,7 @@ public interface World extends RegionAccessor, WorldInfo, PluginMessageRecipient
      */
     @NotNull
     @org.jetbrains.annotations.ApiStatus.Obsolete(since = "1.20.2") // Paper
-    public FallingBlock spawnFallingBlock(@NotNull Location location, @NotNull BlockData data) throws IllegalArgumentException;
+    FallingBlock spawnFallingBlock(@NotNull Location location, @NotNull BlockData data) throws IllegalArgumentException;
 
     /**
      * Spawn a {@link FallingBlock} entity at the given {@link Location} of the
