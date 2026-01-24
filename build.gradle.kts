@@ -4,10 +4,12 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 plugins {
 //    `maven-publish`
     id("io.papermc.paperweight.patcher") version "2.0.0-beta.18"
+//    kotlin("jvm") version "2.2.21"
 }
 
 val paperMavenPublicUrl = "https://repo.papermc.io/repository/maven-public/"
 val leafMavenPublicUrl = "https://maven.leafmc.one/snapshots/"
+val fabricMavenPublicUrl = "https://maven.fabricmc.net/"
 
 subprojects {
     apply(plugin = "java-library")
@@ -23,6 +25,7 @@ subprojects {
         mavenCentral()
         maven(paperMavenPublicUrl)
         maven(leafMavenPublicUrl)
+        maven(fabricMavenPublicUrl)
     }
 
     tasks.withType<AbstractArchiveTask>().configureEach {

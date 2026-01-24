@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "petal",
+  "version": "${version}",
+
+  "name": "Petal",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.grassproject.petal.fabric.PetalFabricEndPoint"
+    ]
+  },
+
+  "mixins": [
+    "petal.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

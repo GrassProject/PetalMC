@@ -47,28 +47,15 @@ To build Server Jar, run `./gradlew createMojmapPaperclipJar`
 To apply change, run ''
 
 
-## 📦 API
-<details>
-<summary>Click to expand</summary>
-
-### Gradle
-```kotlin
-repositories {
-  maven {
-    url = uri("https://maven.leafmc.one/snapshots/")
-  }
-}
-
-dependencies {
-    compileOnly("cn.dreeam.leaf:leaf-api:1.21.8-R0.1-SNAPSHOT")
-}
-
-java {
-  toolchain.languageVersion.set(JavaLanguageVersion.of(21))
-}
-```
-</details>
-
 ## ⚖️ License
 Leaf is licensed under various open source licenses from its upstream projects. See [LICENSE.md](LICENSE.md) for full details.
 
+## 🛠️ Techs Stack
+
+| Component | Github | Purpose |
+|-----------|--------|---------|
+| PaperMC   |        |         |
+| LeafMC    |        |         |
+| Purpur    |        |         |
+| Archlight |        |         |
+| Youer     |        |         |

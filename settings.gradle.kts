@@ -4,6 +4,9 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven("https://repo.papermc.io/repository/maven-public/")
+        maven("https://maven.fabricmc.net/") {
+            name = "Fabric"
+        }
     }
 }
 
@@ -22,9 +25,6 @@ if (!file(".git").exists()) {
          the Leaf repository using Git, not download a code
          zip from GitHub.
          
-         Built Leaf jars are available for download at
-         https://www.leafmc.one/download
-         
          See https://github.com/PaperMC/Paper/blob/main/CONTRIBUTING.md
          for further information on building and modifying Paper forks.
         ===================================================
@@ -39,3 +39,4 @@ for (name in listOf("petal-api", "petal-server")) {
     val projName = name.lowercase(Locale.ENGLISH)
     include(projName)
 }
+include("petal-fabric")
