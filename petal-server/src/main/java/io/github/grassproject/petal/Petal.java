@@ -6,6 +6,8 @@ import org.bukkit.craftbukkit.CraftServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 public class Petal {
     private static final Logger LOGGER = LoggerFactory.getLogger("Petal");
 
@@ -25,6 +27,15 @@ public class Petal {
     }
 
     public static void init() {
-        LOGGER.info("PETALMC init");
+        LOGGER.info("init");
+        List.of(
+            "\u001B[31m██████╗ ███████╗████████╗ █████╗ ██╗     ███╗   ███╗ ██████╗\u001B[0m",
+            "\u001B[31m██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██║     ████╗ ████║██╔════╝",
+            "\u001B[31m██████╔╝█████╗     ██║   ███████║██║     ██╔████╔██║██║     ",
+            "\u001B[31m██╔═══╝ ██╔══╝     ██║   ██╔══██║██║     ██║╚██╔╝██║██║     ",
+            "\u001B[31m██║     ███████╗   ██║   ██║  ██║███████╗██║ ╚═╝ ██║╚██████╗",
+            "\u001B[31m╚═╝     ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝\u001B[0m",
+            "                                       Made by. GrassProject"
+        ).forEach(LOGGER::info);
     }
 }
